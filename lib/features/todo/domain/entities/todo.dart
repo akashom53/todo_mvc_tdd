@@ -1,6 +1,8 @@
-class Todo {
-  String title;
-  bool isCompleted;
+import 'package:equatable/equatable.dart';
 
-  Todo(this.title, this.isCompleted);
+class Todo extends Equatable {
+  final String title;
+  final bool isCompleted;
+
+  Todo(this.title, this.isCompleted) : super([title, isCompleted]);
 }
